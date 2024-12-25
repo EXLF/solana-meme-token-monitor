@@ -38,7 +38,7 @@
 - [ ] 实现买卖压力特征：
   - 买卖单比例
   - 买卖单平均规模
-  - 买卖订单集中度
+  - 买卖订单集���度
 
 ### 2.3 流动性特征
 - [ ] 实现流动性特征：
@@ -156,3 +156,42 @@ src/
    - 优化并发请求
    - 实现断点续传
    - 添加缓存机制
+
+## 更新记录
+
+### 2024-01-08
+1. ✅ 项目初始化与代码托管
+   - 创建 GitHub 仓库
+   - 添加 .gitignore 和 LICENSE
+   - 完善 README.md 文档
+
+2. ✅ 代币元数据获取功能
+   - 使用 web3.js 获取代币基本信息
+   - 获取 mint authority、decimals 等信息
+   - 获取代币账户信息
+
+3. 🔄 代币创建时间获取（进行中）
+   - 尝试通过元数据获取创建时间（未成功）
+   - 尝试通过首次交易获取创建时间（进行中）
+   - 计划通过区块高度估算创建时间
+
+### 目录结构更新
+```
+solana-meme-token-monitor/
+├── src/
+│   ├── services/
+│   │   └── helius/
+│   │       └── token-history.ts    # 代币历史数据服务
+│   ├── config/
+│   │   └── index.ts               # 配置文件
+│   ├── test.ts                    # 主测试文件
+│   └── test-metadata.ts           # 代币元数据测试文件
+├── scripts/
+│   └── fetch_solana_docs.py       # Solana文档抓取脚本
+├── .cursorrules                   # Cursor IDE规则配置
+├── .gitignore                     # Git忽略文件配置
+├── README.md                      # 项目说明文档
+├── LICENSE                        # MIT许可证
+├── package.json                   # 项目依赖配置
+└── project_progress.md            # 项目进展记录
+```
