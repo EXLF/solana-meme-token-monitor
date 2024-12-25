@@ -1,0 +1,1128 @@
+[
+  {
+    "pattern": "https://docs.helius.dev",
+    "title": "使用说明",
+    "description": "\n获取Solana链上数据的优先级说明：\n1. 首先查阅Helius文档，检查是否有现成的API可以直接使用\n2. 优先使用Helius提供的以下功能：\n   - RPC节点API（标准Solana RPC方法）\n   - Enhanced Transactions API（增强的交易解析）\n   - DAS API（NFT和Token数据）\n   - Webhook（实时数据推送）\n   - WebSocket（实时数据订阅）\n3. 如果Helius文档中没有找到合适的方法，再考虑使用其他方案：\n   - Solana web3.js\n   - 其他第三方API\n   - 自定义实现\n\n为什么优先使用Helius:\n- 提供企业级的稳定性和可靠性\n- 支持高并发和大规模请求\n- 提供增强的数据解析能力\n- 简化了复杂数据的获取流程\n- 持续更新和维护\n\nAPI配置信息：\n1. RPC节点：\n   - HTTP URL: https://mainnet.helius-rpc.com/?api-key=b38736d5-a829-4f6b-a37f-93487de37917\n   - WebSocket URL: wss://mainnet.helius-rpc.com/?api-key=b38736d5-a829-4f6b-a37f-93487de37917\n   - Eclipse URL: https://eclipse.helius-rpc.com/\n\n2. Enhanced APIs：\n   - Parse Transaction: https://api.helius.xyz/v0/transactions/?api-key=b38736d5-a829-4f6b-a37f-93487de37917\n   - Transaction History: https://api.helius.xyz/v0/addresses/{address}/transactions/?api-key=b38736d5-a829-4f6b-a37f-93487de37917\n\n注意：请妥善保管API密钥，不要在公开场合分享\n\n如果Helius API无法满足需求，可以参考Solana Web3.js文档实现：\n1. JavaScript客户端文档: https://solana.com/docs/clients/javascript\n2. Web3.js API参考: https://solana.com/docs/clients/javascript-reference\n3. Core概念文档: https://solana.com/docs/core\n\n使用Web3.js的优势：\n- 直接与Solana区块链交互\n- 支持更底层的操作\n- 可以实现更复杂的自定义功能\n- 完全开源和可定制\n\n注意事项：\n- 使用Web3.js需要自己处理更多细节\n- 需要考虑性能和并发问题\n- 可能需要额外的错误处理和重试机制"
+  },
+  {
+    "pattern": "https://docs.helius.dev/",
+    "title": "☀️\nWhat is Helius?"
+  },
+  {
+    "pattern": "https://docs.helius.dev/welcome/pricing-and-rate-limits",
+    "title": "💳\nPricing & Rate limits"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-rpc-nodes/helius-rpcs-overview",
+    "title": "☀️\nHelius RPCs Overview"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-rpc-nodes/dedicated-nodes",
+    "title": "🏆\nDedicated Nodes"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-rpc-nodes/dedicated-nodes/getting-started-with-dedicated-nodes",
+    "title": "Getting Started with Dedicated Nodes"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-rpc-nodes/dedicated-staked-connections",
+    "title": "🏙️\nDedicated Staked Connections"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-rpc-nodes/common-error-codes",
+    "title": "⁉️\nCommon Error Codes"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http",
+    "title": "🔗\nHTTP"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getaccountinfo",
+    "title": "getAccountInfo"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getbalance",
+    "title": "getBalance"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblock",
+    "title": "getBlock"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblockcommitment",
+    "title": "getBlockCommitment"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblockheight",
+    "title": "getBlockHeight"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblockproduction",
+    "title": "getBlockProduction"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblocktime",
+    "title": "getBlockTime"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblocks",
+    "title": "getBlocks"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getblockswithlimit",
+    "title": "getBlocksWithLimit"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getclusternodes",
+    "title": "getClusterNodes"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getepochinfo",
+    "title": "getEpochInfo"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getepochschedule",
+    "title": "getEpochSchedule"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getfeeformessage",
+    "title": "getFeeForMessage"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getfirstavailableblock",
+    "title": "getFirstAvailableBlock"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getgenesishash",
+    "title": "getGenesisHash"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gethealth",
+    "title": "getHealth"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gethighestsnapshotslot",
+    "title": "getHighestSnapshotSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getidentity",
+    "title": "getIdentity"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getinflationgovernor",
+    "title": "getInflationGovernor"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getinflationrate",
+    "title": "getInflationRate"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getinflationreward",
+    "title": "getInflationReward"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getlargestaccounts",
+    "title": "getLargestAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getlatestblockhash",
+    "title": "getLatestBlockhash"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getleaderschedule",
+    "title": "getLeaderSchedule"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getmaxretransmitslot",
+    "title": "getMaxRetransmitSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getmaxshredinsertslot",
+    "title": "getMaxShredInsertSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getminimumbalanceforrentexemption",
+    "title": "getMinimumBalanceForRentExemption"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getmultipleaccounts",
+    "title": "getMultipleAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getprogramaccounts",
+    "title": "getProgramAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getrecentperformancesamples",
+    "title": "getRecentPerformanceSamples"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getrecentprioritizationfees",
+    "title": "getRecentPrioritizationFees"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getsignaturestatuses",
+    "title": "getSignatureStatuses"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getsignaturesforaddress",
+    "title": "getSignaturesForAddress"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getslot",
+    "title": "getSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getslotleader",
+    "title": "getSlotLeader"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getslotleaders",
+    "title": "getSlotLeaders"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getstakeminimumdelegation",
+    "title": "getStakeMinimumDelegation"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getsupply",
+    "title": "getSupply"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettokenaccountbalance",
+    "title": "getTokenAccountBalance"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettokenaccountsbydelegate",
+    "title": "getTokenAccountsByDelegate"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettokenaccountsbyowner",
+    "title": "getTokenAccountsByOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettokenlargestaccounts",
+    "title": "getTokenLargestAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettokensupply",
+    "title": "getTokenSupply"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettransaction",
+    "title": "getTransaction"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/gettransactioncount",
+    "title": "getTransactionCount"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getversion",
+    "title": "getVersion"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/getvoteaccounts",
+    "title": "getVoteAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/isblockhashvalid",
+    "title": "isBlockhashValid"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/minimumledgerslot",
+    "title": "minimumLedgerSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/requestairdrop",
+    "title": "requestAirdrop"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/sendtransaction",
+    "title": "sendTransaction"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/http/simulatetransaction",
+    "title": "simulateTransaction"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket",
+    "title": "🔌\nWebsocket"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/accountsubscribe",
+    "title": "accountSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/accountunsubscribe",
+    "title": "accountUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/blocksubscribe",
+    "title": "blockSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/blockunsubscribe",
+    "title": "blockUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/logssubscribe",
+    "title": "logsSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/logsunsubscribe",
+    "title": "logsUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/programsubscribe",
+    "title": "programSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/programunsubscribe",
+    "title": "programUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/rootsubscribe",
+    "title": "rootSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/rootunsubscribe",
+    "title": "rootUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/signaturesubscribe",
+    "title": "signatureSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/signatureunsubscribe",
+    "title": "signatureUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/slotsubscribe",
+    "title": "slotSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/slotunsubscribe",
+    "title": "slotUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/slotsupdatessubscribe",
+    "title": "slotsUpdatesSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/slotsupdatesunsubscribe",
+    "title": "slotsUpdatesUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/votesubscribe",
+    "title": "voteSubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/rpc/websocket/voteunsubscribe",
+    "title": "voteUnsubscribe"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/geyser-yellowstone",
+    "title": "🌊\nGeyser (Yellowstone)"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/enhanced-websockets-beta",
+    "title": "⚡\nEnhanced Websockets (beta)"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks",
+    "title": "🪝\nWebhooks"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference",
+    "title": "📘API Reference"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference/create-webhook",
+    "title": "Create Webhook"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference/get-all-webhooks",
+    "title": "Get All Webhooks"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference/get-webhook",
+    "title": "Get Webhook"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference/edit-webhook",
+    "title": "Edit Webhook"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/api-reference/delete-webhook",
+    "title": "Delete Webhook"
+  },
+  {
+    "pattern": "https://docs.helius.dev/data-streaming/webhooks/faqs",
+    "title": "❓FAQs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/priority-fee-api",
+    "title": "🚥\nPriority Fee API"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/enhanced-transactions-api",
+    "title": "📖\nEnhanced Transactions API"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/enhanced-transactions-api/parse-transaction-s",
+    "title": "Parse Transaction(s)"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/enhanced-transactions-api/parsed-transaction-history",
+    "title": "Parsed Transaction History"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/enhanced-transactions-api/faqs",
+    "title": "❓FAQs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/solana-apis/deprecated-token-metadata-api",
+    "title": "💹\n(Deprecated) Token Metadata API"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/what-is-nft-compression-on-solana",
+    "title": "🏗️\nWhat is NFT compression on Solana?"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api",
+    "title": "💊\nDigital Asset Standard (DAS) API"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-asset",
+    "title": "Get Asset"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-asset/get-asset-batch",
+    "title": "Get Asset Batch"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-asset-proof",
+    "title": "Get Asset Proof"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-asset-proof/get-asset-proof-batch",
+    "title": "Get Asset Proof Batch"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/search-assets",
+    "title": "Search Assets"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-assets-by-owner",
+    "title": "Get Assets by Owner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-assets-by-authority",
+    "title": "Get Assets by Authority"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-assets-by-creator",
+    "title": "Get Assets by Creator"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-assets-by-group",
+    "title": "Get Assets by Group"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-signatures-for-asset",
+    "title": "Get Signatures For Asset"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-token-accounts",
+    "title": "Get Token Accounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/get-nft-editions",
+    "title": "Get Nft Editions"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/fungible-token-extension",
+    "title": "⏭️Fungible Token Extension"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/digital-asset-standard-das-api/paginating-das-requests",
+    "title": "🗂️Paginating DAS Requests"
+  },
+  {
+    "pattern": "https://docs.helius.dev/compression-and-das-api/deprecated-mint-api",
+    "title": "📨\n(Deprecated) Mint API"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/what-is-zk-compression-on-solana",
+    "title": "💡\nWhat is ZK Compression on Solana?"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints",
+    "title": "🚅\nPhoton RPC Endpoints"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedaccount",
+    "title": "getCompressedAccount"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedaccountbalance",
+    "title": "getCompressedAccountBalance"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedtokenaccountbalance",
+    "title": "getCompressedTokenAccountBalance"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedbalancebyowner",
+    "title": "getCompressedBalanceByOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedtokenbalancesbyownerv2",
+    "title": "getCompressedTokenBalancesByOwnerV2"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedaccountsbyowner",
+    "title": "getCompressedAccountsByOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getmultiplecompressedaccounts",
+    "title": "getMultipleCompressedAccounts"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedtokenaccountsbyowner",
+    "title": "getCompressedTokenAccountsByOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedtokenaccountsbydelegate",
+    "title": "getCompressedTokenAccountsByDelegate"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/gettransactionwithcompressioninfo",
+    "title": "getTransactionWithCompressionInfo"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedaccountproof",
+    "title": "getCompressedAccountProof"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getmultiplecompressedaccountproofs",
+    "title": "getMultipleCompressedAccountProofs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getmultiplenewaddressproofs",
+    "title": "getMultipleNewAddressProofs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getvalidityproof",
+    "title": "getValidityProof"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressionsignaturesforaccount",
+    "title": "getCompressionSignaturesForAccount"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressionsignaturesforaddress",
+    "title": "getCompressionSignaturesForAddress"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressionsignaturesforowner",
+    "title": "getCompressionSignaturesForOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressionsignaturesfortokenowner",
+    "title": "getCompressionSignaturesForTokenOwner"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getlatestcompressionsignatures",
+    "title": "getLatestCompressionSignatures"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getlatestnonvotingsignatures",
+    "title": "getLatestNonVotingSignatures"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getindexerslot",
+    "title": "getIndexerSlot"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getindexerhealth",
+    "title": "getIndexerHealth"
+  },
+  {
+    "pattern": "https://docs.helius.dev/zk-compression-and-photon-api/photon-rpc-endpoints/getcompressedminttokenholders",
+    "title": "getCompressedMintTokenHolders"
+  },
+  {
+    "pattern": "https://docs.helius.dev/guides/rpc-proxy-protect-your-keys",
+    "title": "🔓\nRPC Proxy — Protect Your Keys"
+  },
+  {
+    "pattern": "https://docs.helius.dev/guides/sending-transactions-on-solana",
+    "title": "📩\nSending Transactions on Solana"
+  },
+  {
+    "pattern": "https://docs.helius.dev/resources/helius-blog",
+    "title": "📚\nHelius Blog"
+  },
+  {
+    "pattern": "https://docs.helius.dev/resources/sdks",
+    "title": "🛠️\nSDKs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/resources/transaction-types",
+    "title": "📘\nTransaction Types"
+  },
+  {
+    "pattern": "https://docs.helius.dev/resources/status-page",
+    "title": "🩺\nStatus Page"
+  },
+  {
+    "pattern": "https://docs.helius.dev/#solana-rpcs",
+    "title": "Solana RPCs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/#data-services",
+    "title": "Data Services📈"
+  },
+  {
+    "pattern": "https://docs.helius.dev/#data-streaming",
+    "title": "Data Streaming"
+  },
+  {
+    "pattern": "https://docs.helius.dev/#event-notifications",
+    "title": "Event Notifications"
+  },
+  {
+    "pattern": "https://docs.helius.dev/#solana-apis",
+    "title": "Solana APIs"
+  },
+  {
+    "pattern": "https://docs.helius.dev/~gitbook/pdf?page=WWB0HjJQi1bKX2Ozc3wG&only=yes",
+    "title": "Export as PDF"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts",
+    "title": "Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#transaction",
+    "title": "transactions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#instruction",
+    "title": "instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs",
+    "title": "programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions",
+    "title": "Transactions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#transaction-fees",
+    "title": "Transaction Fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fees",
+    "title": "Prioritization Fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent",
+    "title": "Rent",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees",
+    "title": "Fees on Solana",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda",
+    "title": "Program Derived Address",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi",
+    "title": "Cross Program Invocation",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens",
+    "title": "Tokens on Solana",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters",
+    "title": "Clusters",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#account",
+    "title": "Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#accountinfo",
+    "title": "AccountInfo",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#native-programs",
+    "title": "Native Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#system-program",
+    "title": "System Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#bpfloader-program",
+    "title": "BPFLoader Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#sysvar-accounts",
+    "title": "Sysvar Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#custom-programs",
+    "title": "Custom Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#program-account",
+    "title": "Program Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#data-account",
+    "title": "Data Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#basic-example",
+    "title": "Basic Example",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#simple-sol-transfer",
+    "title": "Simple SOL Transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#transaction-size",
+    "title": "Transaction Size",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#message-header",
+    "title": "Message Header",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#compact-array-format",
+    "title": "Compact-Array Format",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#array-of-account-addresses",
+    "title": "Array of Account Addresses",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#recent-blockhash",
+    "title": "Recent Blockhash",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#array-of-instructions",
+    "title": "Array of Instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#example-transaction-structure",
+    "title": "Example Transaction Structure",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#accountmeta",
+    "title": "AccountMeta",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#example-instruction-structure",
+    "title": "Example Instruction Structure",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#expanded-example",
+    "title": "Expanded Example",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#manual-sol-transfer",
+    "title": "Manual SOL Transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#basic-examples",
+    "title": "SOL transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#writing-solana-programs",
+    "title": "Writing Solana Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#updating-solana-programs",
+    "title": "Updating Solana Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#verifiable-programs",
+    "title": "Verifiable Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#berkeley-packet-filter-bpf",
+    "title": "Berkeley Packet Filter (BPF",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#why-pay-transaction-fees",
+    "title": "Why pay transaction fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#basic-economic-design",
+    "title": "Basic economic design",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#fee-collection",
+    "title": "Fee collection",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#fee-distribution",
+    "title": "Fee distribution",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#why-burn-some-fees",
+    "title": "Why burn some fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#calculating-transaction-fees",
+    "title": "Calculating transaction fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-budget",
+    "title": "Compute Budget",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#accounts-data-size-limit",
+    "title": "Accounts data size limit",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-units",
+    "title": "Compute units",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-unit-limit",
+    "title": "Compute unit limit",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-unit-price",
+    "title": "Compute unit price",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#how-the-prioritization-fee-is-calculated",
+    "title": "How the prioritization fee is calculated",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#how-to-set-the-prioritization-fee",
+    "title": "How to set the prioritization fee",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fee-best-practices",
+    "title": "Prioritization fee best practices",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent-rate",
+    "title": "Rent rate",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent-exempt",
+    "title": "Rent exempt",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#garbage-collection",
+    "title": "Garbage collection",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fee",
+    "title": "prioritization fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#example-of-an-attack",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rust",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#javascript",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#request-the-minimum-compute-units",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#get-recent-prioritization-fees",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#instructions",
+    "title": "instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#what-is-a-pda",
+    "title": "What is a PDA",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#how-to-derive-a-pda",
+    "title": "How to derive a PDA",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#findprogramaddress",
+    "title": "FindProgramAddress",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#createprogramaddress",
+    "title": "CreateProgramAddress",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#canonical-bump",
+    "title": "Canonical Bump",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#create-pda-accounts",
+    "title": "Create PDA Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#how-to-write-a-cpi",
+    "title": "How to write a CPI",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#basic-cpi",
+    "title": "Basic CPI",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#cpi-with-pda-signer",
+    "title": "CPI with PDA Signer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-program",
+    "title": "Token Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#mint-account",
+    "title": "Mint Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-account",
+    "title": "Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#associated-token-account",
+    "title": "Associated Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-examples",
+    "title": "Token Examples",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-a-new-token",
+    "title": "Create a New Token",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-token-account",
+    "title": "Create Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#mint-tokens",
+    "title": "Mint Tokens",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#transfer-tokens",
+    "title": "Transfer Tokens",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-token-metadata",
+    "title": "Create Token Metadata",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#solana-public-rpc-endpoints",
+    "title": "Solana public RPC endpoints",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#using-explorers-with-different-clusters",
+    "title": "Using explorers with different Clusters",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#on-a-high-level",
+    "title": "On a high level",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet",
+    "title": "Devnet",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet-endpoint",
+    "title": "Devnet endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet-rate-limits",
+    "title": "Devnet rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet",
+    "title": "Testnet",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet-endpoint",
+    "title": "Testnet endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet-rate-limits",
+    "title": "Testnet rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta",
+    "title": "Mainnet beta",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta-endpoint",
+    "title": "Mainnet beta endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta-rate-limits",
+    "title": "Mainnet beta rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#common-http-error-codes",
+    "title": "Common HTTP Error Codes",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#example-object-object-command-line-configuration",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/clients/javascript",
+    "title": "JavaScript Client for Solana",
+    "description": "Solana JavaScript客户端文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/clients/javascript-reference",
+    "title": "Web3.js API Examples",
+    "description": "Solana Web3.js API参考文档"
+  }
+]

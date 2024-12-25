@@ -1,0 +1,527 @@
+[
+  {
+    "pattern": "https://solana.com/docs/clients/javascript",
+    "title": "JavaScript Client for Solana",
+    "description": "Solana JavaScript客户端文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/clients/javascript-reference",
+    "title": "Web3.js API Examples",
+    "description": "Solana Web3.js API参考文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts",
+    "title": "Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#transaction",
+    "title": "transactions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#instruction",
+    "title": "instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs",
+    "title": "programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions",
+    "title": "Transactions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#transaction-fees",
+    "title": "Transaction Fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fees",
+    "title": "Prioritization Fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent",
+    "title": "Rent",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees",
+    "title": "Fees on Solana",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda",
+    "title": "Program Derived Address",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi",
+    "title": "Cross Program Invocation",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens",
+    "title": "Tokens on Solana",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters",
+    "title": "Clusters",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#account",
+    "title": "Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#accountinfo",
+    "title": "AccountInfo",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#native-programs",
+    "title": "Native Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#system-program",
+    "title": "System Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#bpfloader-program",
+    "title": "BPFLoader Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#sysvar-accounts",
+    "title": "Sysvar Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#custom-programs",
+    "title": "Custom Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#program-account",
+    "title": "Program Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/accounts#data-account",
+    "title": "Data Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#basic-example",
+    "title": "Basic Example",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#simple-sol-transfer",
+    "title": "Simple SOL Transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#transaction-size",
+    "title": "Transaction Size",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#message-header",
+    "title": "Message Header",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#compact-array-format",
+    "title": "Compact-Array Format",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#array-of-account-addresses",
+    "title": "Array of Account Addresses",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#recent-blockhash",
+    "title": "Recent Blockhash",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#array-of-instructions",
+    "title": "Array of Instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#example-transaction-structure",
+    "title": "Example Transaction Structure",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#accountmeta",
+    "title": "AccountMeta",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#example-instruction-structure",
+    "title": "Example Instruction Structure",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#expanded-example",
+    "title": "Expanded Example",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#manual-sol-transfer",
+    "title": "Manual SOL Transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#basic-examples",
+    "title": "SOL transfer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#writing-solana-programs",
+    "title": "Writing Solana Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#updating-solana-programs",
+    "title": "Updating Solana Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#verifiable-programs",
+    "title": "Verifiable Programs",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/programs#berkeley-packet-filter-bpf",
+    "title": "Berkeley Packet Filter (BPF",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#why-pay-transaction-fees",
+    "title": "Why pay transaction fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#basic-economic-design",
+    "title": "Basic economic design",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#fee-collection",
+    "title": "Fee collection",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#fee-distribution",
+    "title": "Fee distribution",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#why-burn-some-fees",
+    "title": "Why burn some fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#calculating-transaction-fees",
+    "title": "Calculating transaction fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-budget",
+    "title": "Compute Budget",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#accounts-data-size-limit",
+    "title": "Accounts data size limit",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-units",
+    "title": "Compute units",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-unit-limit",
+    "title": "Compute unit limit",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#compute-unit-price",
+    "title": "Compute unit price",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#how-the-prioritization-fee-is-calculated",
+    "title": "How the prioritization fee is calculated",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#how-to-set-the-prioritization-fee",
+    "title": "How to set the prioritization fee",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fee-best-practices",
+    "title": "Prioritization fee best practices",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent-rate",
+    "title": "Rent rate",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rent-exempt",
+    "title": "Rent exempt",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#garbage-collection",
+    "title": "Garbage collection",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#prioritization-fee",
+    "title": "prioritization fees",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#example-of-an-attack",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#rust",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#javascript",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#request-the-minimum-compute-units",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/fees#get-recent-prioritization-fees",
+    "title": "#",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/transactions#instructions",
+    "title": "instructions",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#what-is-a-pda",
+    "title": "What is a PDA",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#how-to-derive-a-pda",
+    "title": "How to derive a PDA",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#findprogramaddress",
+    "title": "FindProgramAddress",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#createprogramaddress",
+    "title": "CreateProgramAddress",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#canonical-bump",
+    "title": "Canonical Bump",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/pda#create-pda-accounts",
+    "title": "Create PDA Accounts",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#how-to-write-a-cpi",
+    "title": "How to write a CPI",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#basic-cpi",
+    "title": "Basic CPI",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/cpi#cpi-with-pda-signer",
+    "title": "CPI with PDA Signer",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#key-points",
+    "title": "Key Points",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-program",
+    "title": "Token Program",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#mint-account",
+    "title": "Mint Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-account",
+    "title": "Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#associated-token-account",
+    "title": "Associated Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#token-examples",
+    "title": "Token Examples",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-a-new-token",
+    "title": "Create a New Token",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-token-account",
+    "title": "Create Token Account",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#mint-tokens",
+    "title": "Mint Tokens",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#transfer-tokens",
+    "title": "Transfer Tokens",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/tokens#create-token-metadata",
+    "title": "Create Token Metadata",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#solana-public-rpc-endpoints",
+    "title": "Solana public RPC endpoints",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#using-explorers-with-different-clusters",
+    "title": "Using explorers with different Clusters",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#on-a-high-level",
+    "title": "On a high level",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet",
+    "title": "Devnet",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet-endpoint",
+    "title": "Devnet endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#devnet-rate-limits",
+    "title": "Devnet rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet",
+    "title": "Testnet",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet-endpoint",
+    "title": "Testnet endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#testnet-rate-limits",
+    "title": "Testnet rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta",
+    "title": "Mainnet beta",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta-endpoint",
+    "title": "Mainnet beta endpoint",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#mainnet-beta-rate-limits",
+    "title": "Mainnet beta rate limits",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#common-http-error-codes",
+    "title": "Common HTTP Error Codes",
+    "description": "Solana Core文档"
+  },
+  {
+    "pattern": "https://solana.com/docs/core/clusters#example-object-object-command-line-configuration",
+    "title": "#",
+    "description": "Solana Core文档"
+  }
+]
